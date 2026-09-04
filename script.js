@@ -1,9 +1,5 @@
 var isDate = function (input) {
  
-	if (input instanceof Date) {
-    return !isNaN(input.getTime());
-  }
-
   return !isNaN(Date.parse(input));
 };
 
